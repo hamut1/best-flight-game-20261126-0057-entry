@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Ridge Courier</title>
+  <link rel="icon" href="data:,">
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; background: #101522; display: grid; place-items: center; min-height: 100vh }
+    main { width: min(100vw, 177.7778vh); aspect-ratio: 16 / 9 }
+    canvas { display: block; width: 100%; height: 100%; touch-action: none }
+  </style>
+</head>
+<body>
+  <main aria-label="Aurora Ridge Courier flight game">
+    <canvas id="flight" width="1280" height="720" tabindex="0" aria-label="Select a mission with 1, 2, or 3. Use W and S for throttle, arrows to steer, G for gear, Space for brakes, P to pause, M to mute, R to restart."></canvas>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
